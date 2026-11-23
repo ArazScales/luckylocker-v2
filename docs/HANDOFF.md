@@ -1,5 +1,37 @@
 # Handoff: what we need from Christine, and how to launch
 
+**Preview:** https://preview.luckylocker-v2.pages.dev (Cloudflare Pages, branch
+`preview`; `noindex`). Redeploy with `npm run deploy`.
+
+## Security headers (checked with `curl -I` on the live preview, 2026-11-23)
+
+Present on every page, the 404, and every asset, font, data file and
+`/.well-known/security.txt`.
+
+| Header | Value |
+| --- | --- |
+| Content-Security-Policy | `default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action https://formspree.io; frame-src https://www.google.com; frame-ancestors 'none'; base-uri 'none'; upgrade-insecure-requests` |
+| Strict-Transport-Security | `max-age=63072000; includeSubDomains; preload` |
+| X-Content-Type-Options | `nosniff` |
+| Referrer-Policy | `strict-origin-when-cross-origin` |
+| Permissions-Policy | `camera=(), microphone=(), geolocation=(), payment=(), usb=()` |
+| Cross-Origin-Opener-Policy | `same-origin` |
+| X-Frame-Options | `DENY` |
+| X-Robots-Tag | `noindex, nofollow` (preview builds only) |
+
+Cloudflare also adds its own `access-control-allow-origin: *`, `report-to` and `nel`
+headers; the CSP is unchanged from the brief.
+
+## Checks
+
+- Zero CSP violations and zero console errors on every page (live preview, Playwright).
+- Lighthouse, live preview: performance 99 to 100, accessibility 100, best practices
+  100 on all nine pages, mobile and desktop. SEO 66 there only because of `noindex`;
+  the launch build (`npm run build:launch`) scores SEO 100 on every page.
+- WCAG 2.2 AA: contrast of every text pair 4.5:1 or more (large statement text 4.0:1,
+  over the 3:1 large-text bar), field borders 3.8:1, keyboard-only use, visible focus,
+  skip link, labelled fields with errors under each, alt text, reduced motion.
+
 ## What we still need from Christine
 
 Everything below is a placeholder on the sample site. Items 1 to 8 go into

@@ -7,7 +7,7 @@ Node script with no runtime dependencies, hosted on Cloudflare Pages.
 v1 lives in a separate repo (`ArazScales/luckylocker-site`) and is untouched, so the
 two can be compared.
 
-- **Preview:** a `*.pages.dev` URL (see "Deploy"). It is kept out of search
+- **Preview:** https://preview.luckylocker-v2.pages.dev. It is kept out of search
   engines with `noindex` and shows a thin "sample website" strip.
 - **Not connected to theluckylocker.com.** The domain and its DNS have not been
   touched. See [docs/HANDOFF.md](docs/HANDOFF.md) for the launch checklist.
