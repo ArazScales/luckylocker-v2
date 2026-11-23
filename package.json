@@ -13,6 +13,6 @@
     "audit": "npm audit"
   },
   "devDependencies": {
-    "wrangler": "4.158.0"
+    "wrangler": "4.165.0"
   }
 }
