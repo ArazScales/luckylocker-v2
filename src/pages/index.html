@@ -1,0 +1,113 @@
+<!--page {"title": "The Lucky Locker | Thrift store: lucky finds, lovely prices", "description": "The Lucky Locker is a thrift store with great prices on new, vintage and trendy finds, plus holiday, home decor, books and DVDs. Inventory changes frequently.", "path": "/", "nav": "home", "bodyClass": "page-home"} -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="open-badge" data-open-badge><span class="open-badge__dot" aria-hidden="true"></span><span data-open-text>{{hoursSummaryText}}</span> <span class="open-badge__note" data-open-note></span></p>
+      <h1 id="hero-title">A thrift store with <span class="swash">lovely prices</span></h1>
+      <p class="lead">New, vintage and trendy finds, plus holiday, home decor, books and DVDs. Our inventory changes frequently, so there’s always something new to find.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="/visit/">Plan your visit</a>
+        <a class="btn btn--secondary" href="/new-arrivals/">See new arrivals</a>
+      </div>
+      <p class="hero__facts"><span>{{hoursSummary}}</span><span>{{addressCityShort}}</span></p>
+    </div>
+    <div class="lockers" data-lockers>
+      <a class="locker locker--a" href="/what-we-carry/#new">
+        <span class="locker__inside"><img src="/assets/img/arrivals/candle-gift-set.svg" alt="" width="400" height="400"><span class="locker__name">New</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">01</span><span class="locker__no">New</span></span>
+      </a>
+      <a class="locker locker--b locker--open" href="/what-we-carry/#vintage">
+        <span class="locker__inside"><img src="/assets/img/arrivals/brass-lamp.svg" alt="" width="400" height="400" fetchpriority="high"><span class="locker__name">Vintage</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">02</span><span class="locker__no">Vintage</span></span>
+      </a>
+      <a class="locker locker--c" href="/what-we-carry/#trendy">
+        <span class="locker__inside"><img src="/assets/img/arrivals/denim-jacket.svg" alt="" width="400" height="400"><span class="locker__name">Trendy</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">03</span><span class="locker__no">Trendy</span></span>
+      </a>
+      <a class="locker locker--d" href="/what-we-carry/#home-decor">
+        <span class="locker__inside"><img src="/assets/img/arrivals/ceramic-vases.svg" alt="" width="400" height="400"><span class="locker__name">Home decor</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">05</span><span class="locker__no">Home decor</span></span>
+      </a>
+      <a class="locker locker--e locker--open" href="/holiday/">
+        <span class="locker__inside"><img src="/assets/img/arrivals/holiday-ornaments.svg" alt="" width="400" height="400"><span class="locker__name">Holiday</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">06</span><span class="locker__no">Holiday</span></span>
+      </a>
+      <a class="locker locker--f locker--open" href="/what-we-carry/#books-dvds">
+        <span class="locker__inside"><img src="/assets/img/arrivals/paperback-stack.svg" alt="" width="400" height="400"><span class="locker__name">Books &amp; DVDs</span></span>
+        <span class="locker__door" aria-hidden="true"><span class="locker__num">07</span><span class="locker__no">Books &amp; DVDs</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight-top" id="visit" aria-labelledby="visit-title">
+  <div class="wrap visit-split">
+    <div class="visit-panel">
+      <div class="visit-panel__top">
+        <h2 id="visit-title">Visit the shop</h2>
+        <p class="open-badge" data-open-badge><span class="open-badge__dot" aria-hidden="true"></span><span data-open-text>{{hoursSummaryText}}</span></p>
+      </div>
+      <div class="visit-cols">
+        <div>
+          <address class="visit-address">{{addressStreet}}<br>{{addressCity}}</address>
+          <div class="actions">
+            <a class="btn btn--secondary" href="{{directionsUrl}}" rel="noopener noreferrer" target="_blank">Get directions<span class="sr-only"> (opens Google Maps in a new tab)</span></a>
+            <a class="btn btn--secondary" href="tel:{{phoneTel}}">Call the shop</a>
+          </div>
+          <p class="small muted visit-phone">Phone: {{phoneDisplay}}</p>
+        </div>
+        <div>
+          {{hoursTable}}
+          {{hoursSampleNote}}
+        </div>
+      </div>
+    </div>
+    <div class="visit-art">
+      <img src="/assets/img/art/shopfront.svg" alt="Drawing of a shopfront with an orange striped awning and a clover sign" width="400" height="400" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface" aria-labelledby="carry-title">
+  <div class="wrap">
+    <div class="head-row">
+      <h2 id="carry-title">Unique as well as everyday items</h2>
+      <div class="head-row__side">
+        <p>Something different turns up every week, next to the things you need anyway.</p>
+        <a class="link link--arrow" href="/what-we-carry/">See what we carry</a>
+      </div>
+    </div>
+    <ul class="grid-4 tag-grid">
+      <li><a class="card tag-card" href="/what-we-carry/#new"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--sky"><img src="/assets/img/arrivals/candle-gift-set.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">New</span><span class="card__text">New products at thrift store prices.</span></span></a></li>
+      <li><a class="card tag-card" href="/what-we-carry/#vintage"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--butter"><img src="/assets/img/arrivals/floral-teapot.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Vintage</span><span class="card__text">Older pieces with character.</span></span></a></li>
+      <li><a class="card tag-card" href="/what-we-carry/#trendy"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--blush"><img src="/assets/img/arrivals/sneakers.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Trendy</span><span class="card__text">Current styles for less.</span></span></a></li>
+      <li><a class="card tag-card" href="/what-we-carry/#everyday"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--stone"><img src="/assets/img/arrivals/cast-iron-skillet.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Everyday</span><span class="card__text">Kitchen, closet and household basics.</span></span></a></li>
+      <li><a class="card tag-card" href="/what-we-carry/#home-decor"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--mint"><img src="/assets/img/arrivals/ceramic-vases.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Home decor</span><span class="card__text">Lamps, vases and frames.</span></span></a></li>
+      <li><a class="card tag-card" href="/holiday/"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--peach"><img src="/assets/img/art/fall.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Holiday &amp; seasonal</span><span class="card__text">Decor for the next holiday.</span></span></a></li>
+      <li><a class="card tag-card" href="/what-we-carry/#books-dvds"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--sky"><img src="/assets/img/arrivals/dvd-stack.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">Books &amp; DVDs</span><span class="card__text">Stock up on reading and movies.</span></span></a></li>
+      <li><a class="card tag-card" href="/new-arrivals/"><span class="tag-card__hole" aria-hidden="true"></span><span class="card__media tile--butter"><img src="/assets/img/arrivals/vinyl-records.svg" alt="" width="400" height="400" loading="lazy"></span><span class="card__body"><span class="card__title">New arrivals</span><span class="card__text">The latest lucky finds.</span></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="statement" aria-label="What you’ll find" data-word-highlight data-keys="lucky">
+  <div class="wrap">
+    <p class="tag tag--mint statement__label">In Christine’s words</p>
+    <p class="statement__text">Great prices on unique as well as everyday items. New, vintage and trendy products, with holiday, home decor, books and DVDs too. The inventory changes frequently, so every visit can be a lucky one.</p>
+  </div>
+</section>
+
+<section class="section section--tight-top" aria-labelledby="arrivals-title">
+  <div class="wrap">
+    <div class="head-row">
+      <h2 id="arrivals-title">New arrivals</h2>
+      <div class="head-row__side">
+        <p>A few recent finds. Come in to see the rest.</p>
+        <a class="link link--arrow" href="/new-arrivals/">See all new arrivals</a>
+      </div>
+    </div>
+    <ul class="grid-4 arrivals-grid" data-arrivals data-limit="4" aria-label="Recent arrivals">{{arrivalsHome}}</ul>
+  </div>
+</section>
+
+{{> close-email}}

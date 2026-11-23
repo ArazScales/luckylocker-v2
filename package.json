@@ -1,0 +1,18 @@
+{
+  "name": "luckylocker-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Lucky Locker sample website, v2. Static HTML, CSS and JS; no runtime dependencies.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:launch": "node build.mjs --no-preview",
+    "serve": "node scripts/serve.mjs dist 8788",
+    "deploy": "node build.mjs && wrangler pages deploy dist --project-name luckylocker-v2 --branch preview",
+    "audit": "npm audit"
+  },
+  "devDependencies": {
+    "wrangler": "4.158.0"
+  }
+}

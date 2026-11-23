@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"><g fill="none" stroke="#1f2b4d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="200" cy="350" rx="120" ry="13" fill="#1f2b4d" fill-opacity=".08" stroke="none"/>
+<path d="M70 176 L84 334 L150 334 L164 176 Z" fill="#b9d3f2" fill-opacity=".6"/>
+<path d="M92 206 L98 314 M117 206 V314 M142 206 L136 314" stroke="#fff" stroke-width="4"/>
+<path d="M156 140 L170 334 L246 334 L260 140 Z" fill="#b9d3f2" fill-opacity=".6"/>
+<path d="M162 214 H254 L246 334 H170 Z" fill="#b9d3f2" stroke-width="0"/>
+<path d="M180 170 L186 314 M208 170 V314 M236 170 L230 314" stroke="#fff" stroke-width="4"/>
+<path d="M156 140 L170 334 L246 334 L260 140 Z"/>
+<circle cx="250" cy="138" r="24" fill="#f2b544"/><path d="M250 120 V156 M234 128 L266 148 M234 148 L266 128" stroke="#fff" stroke-width="3"/>
+<path d="M252 206 L264 334 L316 334 L328 206 Z" fill="#b9d3f2" fill-opacity=".6"/>
+<path d="M270 230 L274 314 M290 230 V314 M310 230 L306 314" stroke="#fff" stroke-width="4"/>
+<path d="M70 176 H164 M252 206 H328" stroke="#f2b544" stroke-width="5"/></g></svg>

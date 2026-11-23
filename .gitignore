@@ -1,0 +1,12 @@
+node_modules/
+dist/
+shots/
+.playwright-cli/
+.wrangler/
+.env
+.env.*
+.dev.vars
+*.log
+.taste-skill/chrome-*
+.taste-skill/
+.impeccable/

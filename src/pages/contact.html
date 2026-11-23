@@ -1,0 +1,81 @@
+<!--page {"title": "Contact and email list | The Lucky Locker", "description": "Send The Lucky Locker a message, call the shop, or join the email list for new arrivals and holiday stock.", "path": "/contact/", "nav": "contact", "bodyClass": "page-contact"} -->
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="wrap">
+    <h1 id="page-title">Contact and email list</h1>
+    <p class="lead">Questions about an item, donations or hours? Send a message, or call the shop for the quickest answer.</p>
+  </div>
+</section>
+
+<section class="section section--tight-top" aria-label="Contact forms">
+  <div class="wrap two-col">
+    <div>
+      <h2 class="contact-title">Send a message</h2>
+      <form class="form" action="{{formContact}}" method="POST" novalidate data-form="contact" data-live="{{formsLive}}" data-sent="Thanks, your message is on its way. We’ll write back soon.">
+        <div class="hp" aria-hidden="true">
+          <label for="contact-gotcha">Leave this empty</label>
+          <input id="contact-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" maxlength="100">
+        </div>
+        <input type="hidden" name="_subject" value="New message from the website">
+        <div class="form__row form__row--2">
+          <div class="field" data-label="Name">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" required maxlength="100" autocomplete="name" aria-describedby="contact-name-error">
+            <p class="field__error" id="contact-name-error" hidden></p>
+          </div>
+          <div class="field" data-label="Email">
+            <label for="contact-email">Email address</label>
+            <input id="contact-email" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="contact-email-error">
+            <p class="field__error" id="contact-email-error" hidden></p>
+          </div>
+        </div>
+        <div class="field" data-label="Message">
+          <label for="contact-message">Message</label>
+          <span class="field__hint" id="contact-message-hint">Up to 2,000 characters.</span>
+          <textarea id="contact-message" name="message" required minlength="10" maxlength="2000" rows="6" aria-describedby="contact-message-hint contact-message-error"></textarea>
+          <p class="field__error" id="contact-message-error" hidden></p>
+        </div>
+        <div>
+          <button class="btn btn--primary" type="submit">Send the message</button>
+        </div>
+        <p class="form__note">We only use your details to reply. <a class="link" href="/privacy/">Privacy policy</a></p>
+        <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+      </form>
+    </div>
+
+    <div class="contact-side">
+      <div class="visit-panel">
+        <h2 class="contact-title">Join the email list</h2>
+        <p>Our inventory changes frequently. Hear about new arrivals and holiday stock first.</p>
+        <form class="form" action="{{formEmailList}}" method="POST" novalidate data-form="email-list" data-live="{{formsLive}}" data-sent="You’re on the list. Watch your inbox for lucky finds.">
+          <div class="hp" aria-hidden="true">
+            <label for="list-gotcha">Leave this empty</label>
+            <input id="list-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" maxlength="100">
+          </div>
+          <input type="hidden" name="_subject" value="New email list signup">
+          <div class="field" data-label="First name">
+            <label for="list-name">First name <span class="muted">(optional)</span></label>
+            <input id="list-name" name="first_name" type="text" maxlength="60" autocomplete="given-name" aria-describedby="list-name-error">
+            <p class="field__error" id="list-name-error" hidden></p>
+          </div>
+          <div class="field" data-label="Email">
+            <label for="list-email">Email address</label>
+            <input id="list-email" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="list-email-error">
+            <p class="field__error" id="list-email-error" hidden></p>
+          </div>
+          <div>
+            <button class="btn btn--primary" type="submit">Join the email list</button>
+          </div>
+          <p class="form__note">Unsubscribe any time. <a class="link" href="/privacy/">Privacy policy</a></p>
+          <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+
+      <div class="contact-more">
+        <h2 class="t-label">Call the shop</h2>
+        <p><a class="btn btn--secondary" href="tel:{{phoneTel}}">Call {{phoneDisplay}}</a></p>
+        <h2 class="t-label">Follow along</h2>
+        <ul class="site-footer__links">{{socialLinks}}</ul>
+      </div>
+    </div>
+  </div>
+</section>

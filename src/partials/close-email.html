@@ -1,0 +1,26 @@
+<section class="band" aria-labelledby="email-list-title">
+  <div class="wrap band__grid">
+    <div>
+      <p class="tag statement__label">Email list</p>
+      <h2 id="email-list-title">Hear about new finds first</h2>
+      <p class="lead band__lead">Our inventory changes frequently. Join the list for new arrivals and holiday stock.</p>
+    </div>
+    <form class="form form--inline" action="{{formEmailList}}" method="POST" novalidate data-form="email-list" data-live="{{formsLive}}" data-sent="You’re on the list. Watch your inbox for lucky finds.">
+      <div class="hp" aria-hidden="true">
+        <label for="band-gotcha">Leave this empty</label>
+        <input id="band-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" maxlength="100">
+      </div>
+      <input type="hidden" name="_subject" value="New email list signup">
+      <div class="form__line">
+        <div class="field" data-label="Email">
+          <label for="band-email">Email address</label>
+          <input id="band-email" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="band-email-error">
+          <p class="field__error" id="band-email-error" hidden></p>
+        </div>
+        <button class="btn btn--on-dark" type="submit">Join the email list</button>
+      </div>
+      <p class="form__note">We only use your email for this list. Unsubscribe any time. <a class="link" href="/privacy/">Privacy policy</a></p>
+      <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+    </form>
+  </div>
+</section>

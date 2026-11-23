@@ -1,0 +1,72 @@
+{
+  "_readme": [
+    "Every fact the website states about the shop lives in this one file.",
+    "Anything with \"placeholder\": true is a stand-in. The site shows it with a dashed orange underline and a TODO tag.",
+    "To make it real: type the real value, set \"placeholder\" to false, then run: npm run build",
+    "Run  grep -n '\"placeholder\": true' site.config.json  to list what is still missing."
+  ],
+
+  "name": "The Lucky Locker",
+  "tagline": "Lucky Finds Lovely Prices",
+  "domain": "theluckylocker.com",
+  "siteUrl": "https://theluckylocker.com",
+
+  "preview": {
+    "_note": "true keeps the site out of search engines (noindex) and shows the sample-site strip. Set to false at launch.",
+    "enabled": true,
+    "madeBy": "ARAZ Scales"
+  },
+
+  "address": {
+    "placeholder": true,
+    "street": "Street address",
+    "city": "Your city",
+    "region": "ST",
+    "postalCode": "00000",
+    "directionsQuery": ""
+  },
+
+  "phone": {
+    "placeholder": true,
+    "display": "(555) 010-0123",
+    "e164": "+15550100123"
+  },
+
+  "timezone": {
+    "placeholder": true,
+    "_note": "IANA name used by the open/closed badge, e.g. America/New_York, America/Chicago, America/Denver, America/Los_Angeles.",
+    "value": "America/Chicago"
+  },
+
+  "hours": {
+    "placeholder": true,
+    "_note": "24-hour times. Leave open and close as null for a closed day.",
+    "days": [
+      { "day": "Monday",    "open": null,    "close": null },
+      { "day": "Tuesday",   "open": "10:00", "close": "18:00" },
+      { "day": "Wednesday", "open": "10:00", "close": "18:00" },
+      { "day": "Thursday",  "open": "10:00", "close": "18:00" },
+      { "day": "Friday",    "open": "10:00", "close": "18:00" },
+      { "day": "Saturday",  "open": "10:00", "close": "17:00" },
+      { "day": "Sunday",    "open": "12:00", "close": "16:00" }
+    ]
+  },
+
+  "socials": [
+    { "name": "Facebook",  "placeholder": true, "url": "" },
+    { "name": "Instagram", "placeholder": true, "url": "" },
+    { "name": "TikTok",    "placeholder": true, "url": "" }
+  ],
+
+  "forms": {
+    "_note": "Formspree endpoints, e.g. https://formspree.io/f/abcdwxyz. Until they are real, the forms show a preview message instead of sending.",
+    "placeholder": true,
+    "contact": "https://formspree.io/f/TODO_CONTACT",
+    "emailList": "https://formspree.io/f/TODO_EMAIL_LIST"
+  },
+
+  "privacy": {
+    "effectiveDate": "2026-11-22",
+    "ownerName": { "placeholder": true, "value": "Christine (owner)" }
+  }
+}

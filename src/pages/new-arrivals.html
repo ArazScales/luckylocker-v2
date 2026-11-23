@@ -1,0 +1,23 @@
+<!--page {"title": "New arrivals | The Lucky Locker", "description": "Recent finds at The Lucky Locker thrift store. Filter by category: new, vintage, trendy, everyday, home decor, holiday, books and DVDs.", "path": "/new-arrivals/", "nav": "arrivals", "bodyClass": "page-arrivals"} -->
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="wrap">
+    <h1 id="page-title">New arrivals</h1>
+    <p class="lead">Our inventory changes frequently. These are a few recent finds, so come in to see the rest before they’re gone.</p>
+    <p class="small muted arrivals-updated">Last updated {{arrivalsUpdated}}.</p>
+  </div>
+</section>
+
+<section class="section section--tight-top" aria-labelledby="finds-title">
+  <div class="wrap">
+    <h2 class="sr-only" id="finds-title">Recent finds</h2>
+    <div class="filters" data-filters role="group" aria-label="Filter by category">{{arrivalsFilters}}</div>
+    <p class="arrivals-status" data-arrivals-status role="status" aria-live="polite">Showing {{arrivalsCount}} items in all categories.</p>
+    <ul class="grid-4 arrivals-grid" data-arrivals aria-label="New arrivals">{{arrivalsAll}}</ul>
+    <div class="empty" data-arrivals-empty hidden>
+      <p>Nothing in this category right now. The shelves change often, so check back soon.</p>
+      <button class="btn btn--secondary" type="button" data-show-all>Show every category</button>
+    </div>
+  </div>
+</section>
+
+{{> close-email}}

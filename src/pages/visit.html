@@ -1,0 +1,50 @@
+<!--page {"title": "Visit us: hours and directions | The Lucky Locker", "description": "Opening hours, address, directions and phone number for The Lucky Locker thrift store.", "path": "/visit/", "nav": "visit", "bodyClass": "page-visit"} -->
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="wrap">
+    <p class="open-badge eyebrow-tag" data-open-badge><span class="open-badge__dot" aria-hidden="true"></span><span data-open-text>{{hoursSummaryText}}</span> <span class="open-badge__note" data-open-note></span></p>
+    <h1 id="page-title">Visit The Lucky Locker</h1>
+    <p class="lead">Come in and browse. The shelves change often, so there’s something different every time.</p>
+  </div>
+</section>
+
+<section class="section section--tight-top" aria-label="Address, hours and map">
+  <div class="wrap two-col">
+    <div class="visit-panel">
+      <h2 class="t-label">Address</h2>
+      <address class="visit-address">{{addressStreet}}<br>{{addressCity}}</address>
+      <div class="actions">
+        <a class="btn btn--primary" href="{{directionsUrl}}" rel="noopener noreferrer" target="_blank">Get directions<span class="sr-only"> (opens Google Maps in a new tab)</span></a>
+        <a class="btn btn--secondary" href="tel:{{phoneTel}}">Call the shop</a>
+      </div>
+      <p class="small muted visit-phone">Phone: {{phoneDisplay}}</p>
+
+      <h2 class="t-label visit-hours-label">Opening hours</h2>
+      {{hoursTable}}
+      {{hoursSampleNote}}
+    </div>
+    <div>
+      <div class="map-frame" data-map data-map-src="{{mapEmbed}}" data-map-title="Map showing The Lucky Locker">
+        <button class="btn btn--primary map-frame__cta" type="button">Show the map</button>
+      </div>
+      <p class="small muted map-note">The map comes from Google and only loads when you press the button.</p>
+      {{mapNote}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface" aria-labelledby="before-title">
+  <div class="wrap">
+    <div class="head-row">
+      <h2 id="before-title">Good to know before you come</h2>
+      <div class="head-row__side"><a class="link link--arrow" href="/faq/">Read the FAQ</a></div>
+    </div>
+    <ul class="facts">
+      <li><strong>Parking</strong><span class="ph">Where to park, and whether it’s free</span></li>
+      <li><strong>Accessibility</strong><span class="ph">Step-free entrance? Aisle width? Restroom?</span></li>
+      <li><strong>Payment</strong><span class="ph">Cash, cards, tap to pay?</span></li>
+      <li><strong>Donations</strong><span><a class="link" href="/faq/#donations">How donations work</a></span></li>
+    </ul>
+  </div>
+</section>
+
+{{> close-email}}

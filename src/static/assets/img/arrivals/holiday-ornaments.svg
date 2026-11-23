@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"><g fill="none" stroke="#1f2b4d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 58 Q200 96 360 58" stroke-width="5"/>
+<path d="M120 74 V142 M210 82 V112 M292 74 V162" stroke-width="4"/>
+<circle cx="120" cy="206" r="56" fill="#f7941d"/><rect x="106" y="138" width="28" height="18" rx="3" fill="#f2b544"/>
+<path d="M70 204 L86 192 L102 204 L118 192 L134 204 L150 192 L166 204" stroke="#fff" stroke-width="5"/>
+<path d="M92 172 A40 40 0 0 1 108 160" stroke="#fff" stroke-width="5"/>
+<circle cx="210" cy="166" r="46" fill="#2f8a57"/><rect x="198" y="108" width="24" height="16" rx="3" fill="#f2b544"/>
+<g fill="#fff" stroke="none"><circle cx="192" cy="160" r="5"/><circle cx="212" cy="150" r="5"/><circle cx="230" cy="166" r="5"/><circle cx="204" cy="184" r="5"/><circle cx="224" cy="190" r="5"/></g>
+<circle cx="292" cy="230" r="58" fill="#b9d3f2"/><rect x="278" y="158" width="28" height="18" rx="3" fill="#f2b544"/>
+<path d="M292 208 L297.3 222.7 L312.9 223.2 L300.6 232.8 L304.9 247.8 L292 239 L279.1 247.8 L283.4 232.8 L271.1 223.2 L286.7 222.7 Z" fill="#f2b544" stroke-width="4"/>
+<path d="M254 200 A46 46 0 0 1 270 186" stroke="#fff" stroke-width="5"/>
+<path d="M60 330 l10 -10 M70 330 l-10 -10 M330 320 l10 -10 M340 320 l-10 -10 M200 300 v16 M192 308 h16" stroke="#f2b544" stroke-width="4"/></g></svg>

@@ -1,0 +1,27 @@
+{
+  "_readme": "The New Arrivals page and the home page are built from this file. Newest first. category must be one of the ids in categories. image must be a file in /assets/img/arrivals/ (.svg, .png, .jpg or .webp). Set sample to false (or remove it) on real items.",
+  "updated": "2026-11-22",
+  "categories": [
+    { "id": "new", "label": "New" },
+    { "id": "vintage", "label": "Vintage" },
+    { "id": "trendy", "label": "Trendy" },
+    { "id": "everyday", "label": "Everyday" },
+    { "id": "home-decor", "label": "Home decor" },
+    { "id": "holiday", "label": "Holiday" },
+    { "id": "books-dvds", "label": "Books & DVDs" }
+  ],
+  "items": [
+    { "name": "Brass table lamp with fringed shade", "category": "vintage", "price": "$18", "note": "Rewired, pull-chain switch.", "image": "/assets/img/arrivals/brass-lamp.svg", "alt": "Brass table lamp with a pink fringed shade", "sample": true },
+    { "name": "Candle gift set, new in box", "category": "new", "price": "$9", "note": "Still in the tissue paper.", "image": "/assets/img/arrivals/candle-gift-set.svg", "alt": "Jar candle in an orange gift box with tissue paper", "sample": true },
+    { "name": "Denim jacket", "category": "trendy", "price": "$16", "note": "Medium. Contrast stitching.", "image": "/assets/img/arrivals/denim-jacket.svg", "alt": "Blue denim jacket with chest pockets and a clover pin", "sample": true },
+    { "name": "Floral china teapot", "category": "vintage", "price": "$12", "note": "Lid included, no chips.", "image": "/assets/img/arrivals/floral-teapot.svg", "alt": "White teapot painted with pink flowers", "sample": true },
+    { "name": "Cast-iron skillet, 10 inch", "category": "everyday", "price": "$14", "note": "Seasoned and ready to cook.", "image": "/assets/img/arrivals/cast-iron-skillet.svg", "alt": "Black cast-iron skillet with a fried egg in it", "sample": true },
+    { "name": "Ceramic vases, set of three", "category": "home-decor", "price": "$15", "note": "Green, orange and pink.", "image": "/assets/img/arrivals/ceramic-vases.svg", "alt": "Three ceramic vases in green, orange and pink on a shelf", "sample": true },
+    { "name": "Paperback bundle", "category": "books-dvds", "price": "4 for $5", "note": "Mysteries and beach reads.", "image": "/assets/img/arrivals/paperback-stack.svg", "alt": "Stack of four paperbacks with a coffee mug on top", "sample": true },
+    { "name": "Glass ribbed tumblers, set of 3", "category": "everyday", "price": "$7", "note": "Gold rims.", "image": "/assets/img/arrivals/glass-tumblers.svg", "alt": "Three ribbed glass tumblers with gold rims", "sample": true },
+    { "name": "Vinyl records", "category": "vintage", "price": "$3 each", "note": "Sleeves included.", "image": "/assets/img/arrivals/vinyl-records.svg", "alt": "Record sliding out of an orange sleeve", "sample": true },
+    { "name": "Glass ornaments, box of 12", "category": "holiday", "price": "$6", "note": "Mixed colors.", "image": "/assets/img/arrivals/holiday-ornaments.svg", "alt": "Three glass ornaments hanging from a garland", "sample": true },
+    { "name": "Canvas low-top sneakers", "category": "trendy", "price": "$11", "note": "Size 8, barely worn.", "image": "/assets/img/arrivals/sneakers.svg", "alt": "Light blue canvas low-top sneaker", "sample": true },
+    { "name": "DVDs, movies and box sets", "category": "books-dvds", "price": "$2 each", "note": "Family picks and classics.", "image": "/assets/img/arrivals/dvd-stack.svg", "alt": "Three DVD cases and a disc", "sample": true }
+  ]
+}

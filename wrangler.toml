@@ -1,0 +1,5 @@
+# Cloudflare Pages project for the v2 sample. Deploys go to a *.pages.dev URL only;
+# no custom domain is attached. See README, "Deploy".
+name = "luckylocker-v2"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"

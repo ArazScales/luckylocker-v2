@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"><g fill="none" stroke="#1f2b4d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="200" cy="196" r="110" stroke="#2f8a57" stroke-width="44"/>
+<circle cx="200" cy="196" r="110" stroke="#8fcfa3" stroke-width="16" stroke-dasharray="3 22"/>
+<circle cx="200" cy="196" r="132"/><circle cx="200" cy="196" r="88"/>
+<g fill="#f7941d" stroke-width="4"><circle cx="110" cy="140" r="9"/><circle cx="124" cy="128" r="9"/><circle cx="290" cy="140" r="9"/><circle cx="276" cy="128" r="9"/><circle cx="200" cy="86" r="9"/><circle cx="96" cy="222" r="9"/><circle cx="304" cy="222" r="9"/></g>
+<path d="M200 300 C170 274 140 284 146 306 C150 326 180 322 200 302 Z M200 300 C230 274 260 284 254 306 C250 326 220 322 200 302 Z" fill="#f7941d"/>
+<path d="M194 306 L176 352 L190 346 L196 358 L204 308 Z M206 306 L224 352 L210 346 L204 358 L196 308 Z" fill="#f7941d"/>
+<circle cx="200" cy="302" r="11" fill="#f2b544"/>
+<path d="M40 60 v20 M30 70 h20 M350 330 v20 M340 340 h20 M352 60 v16 M344 68 h16" stroke="#b9d3f2" stroke-width="5"/></g></svg>
